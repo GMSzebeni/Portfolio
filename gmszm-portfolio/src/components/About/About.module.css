@@ -1,0 +1,162 @@
+.container {
+    @apply
+    absolute
+    inline-block
+    items-end
+    mt-5
+    md:mt-20
+}
+
+.inits {
+    @apply
+    absolute
+    font-allison
+    -rotate-45
+    origin-bottom-left
+    w-[420px] 
+    h-[320px] 
+    transform 
+    -translate-x-32
+    -translate-y-1/2
+    md:-translate-x-1/2
+}
+
+.bio {
+    @apply
+    absolute
+    text-sm
+    font-thin
+    w-28
+    text-justify
+    transform 
+    translate-x-7
+    -translate-y-1/2
+    md:text-lg
+    md:w-72
+    md:-translate-x-6
+}
+
+.initsH1{
+    @apply
+	w-full
+	h-full
+    text-[#fdf1f1]
+	m-0
+	p-0
+	flex
+    text-9xl
+	flex-wrap
+	content-center
+	justify-center
+    relative
+    md:text-[240px]
+    md:text-shadow
+}
+
+.blobs_1, .blobs_2, .blobs_3, .blobs_4, .blobs_5, .blobs_6, .blobs_7 {
+    @apply
+    block
+    absolute
+    mix-blend-color
+    rounded-for-blobs
+    animate-blobs
+    mt-[50px]
+    ms-[70px]
+}
+
+.blobs_1 {
+    @apply
+    bg-[#ff1493]
+    w-[30px]
+    h-[30px]
+    top-[110px]
+    left-[240px]
+    animation-delay-1000
+    md:w-[60px]
+    md:h-[60px]
+    md:top-[110px]
+    md:left-[350px]
+}
+
+.blobs_2{
+    @apply
+	bg-[#ff4500]
+    w-[40px]
+    h-[40px]
+    top-[80px]
+    left-[185px]
+    animation-delay-2000
+    md:w-[80px]
+    md:h-[80px]
+    md:top-[40px]
+    md:left-[230px]
+}
+
+.blobs_3{
+    @apply
+	bg-[#00ff00]
+	w-[30px]
+    h-[30px]
+    top-[118px]
+	left-[20px]
+    animation-delay-3000
+    md:w-[60px]
+    md:h-[60px]
+    md:top-[120px]
+	md:left-[-90px]
+}
+
+.blobs_4{
+    @apply
+	bg-[#ff0000]
+	w-[50px]
+	h-[50px]
+	top-[100px]
+	left-[125px]
+    animation-delay-4000
+    md:w-[100px]
+	md:h-[100px]
+	md:top-[100px]
+	md:left-[110px]
+}
+
+.blobs_5{
+    @apply
+	bg-[#ffff00]
+	w-[25px]
+	h-[25px]
+	top-[90px]
+	left-[80px]
+    md:w-[50px]
+	md:h-[50px]
+	md:top-[70px]
+	md:left-[20px]
+}
+
+.blobs_6{
+    @apply
+	bg-[#00ffff]
+	w-[30px]
+	h-[30px]
+	top-[144px]
+	left-[74px]
+    animation-delay-1000
+    md:w-[60px]
+	md:h-[60px]
+	md:top-[180px]
+	md:left-[10px]
+}
+
+.blobs_7{
+    @apply
+	bg-[#ff8c00]
+	w-[20px]
+	h-[20px]
+	top-[140px]
+	left-[185px]
+    animation-delay-2000
+    md:w-[40px]
+	md:h-[40px]
+	md:top-[170px]
+	md:left-[220px]
+}

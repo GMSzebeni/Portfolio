@@ -1,0 +1,128 @@
+.container {
+    @apply
+    z-0
+    relative
+    inline-block
+    text-justify
+    text-sm
+    md:text-lg
+    md:mt-20
+}
+
+.label {
+    @apply
+    text-sm
+    font-thin
+    md:text-lg
+}
+
+.input {
+    @apply
+    text-black
+    text-sm
+    font-thin
+    w-full
+    border-solid
+    border-black
+    border-2
+    focus:border-cyan-600
+    focus:border-solid
+    focus:border-2
+    outline-none
+    md:text-lg
+}
+
+.submit {
+    @apply
+    mt-3
+    px-2
+    py-1
+    rounded-md
+    text-cyan-600
+    text-lg
+    font-bold
+    w-full
+    hover:bg-cyan-600
+    hover:text-black
+    md:text-2xl
+}
+
+.blobs_2, .blobs_3, .blobs_4, .blobs_5, .blobs_6 {
+    @apply
+    block
+    absolute
+    mix-blend-color
+    rounded-for-blobs
+    animate-blobs
+    mt-[50px]
+    ms-[70px]
+}
+
+.blobs_2{
+    @apply
+	bg-[#ff4500]
+    w-[40px]
+    h-[40px]
+    -top-[60px]
+    left-[90px]
+    animation-delay-2000
+    md:w-[80px]
+    md:h-[80px]
+    md:-top-[80px]
+    md:left-[110px]
+}
+
+.blobs_3{
+    @apply
+	bg-[#00ff00]
+	w-[25px]
+    h-[25px]
+    top-[315px]
+	-left-[110px]
+    animation-delay-3000
+    md:w-[50px]
+    md:h-[50px]
+    md:top-[430px]
+	md:-left-[150px]
+}
+
+.blobs_4{
+    @apply
+	bg-[#ff0000]
+	w-[50px]
+	h-[50px]
+	top-[135px]
+	left-[125px]
+    animation-delay-4000
+    md:w-[100px]
+	md:h-[100px]
+	md:top-[190px]
+	md:left-[170px]
+}
+
+.blobs_5{
+    @apply
+	bg-[#ffff00]
+	w-[20px]
+	h-[20px]
+	top-[20px]
+	left-[165px]
+    md:w-[40px]
+	md:h-[40px]
+	md:top-[40px]
+	md:left-[250px]
+}
+
+.blobs_6{
+    @apply
+	bg-[#00ffff]
+	w-[35px]
+	h-[35px]
+	top-[360px]
+	-left-[65px]
+    animation-delay-1000
+    md:w-[60px]
+	md:h-[60px]
+	md:top-[520px]
+	md:-left-[60px]
+}

@@ -1,0 +1,91 @@
+.name {
+    @apply
+    text-2xl 
+    font-rajdhani 
+    text-cyan-600 
+    font-bold
+}
+
+.menuButton {
+    @apply
+    p-2 
+    text-gray-700 
+    rounded-md 
+    outline-none 
+    focus:border-gray-400 
+    focus:border
+}
+
+.navBarMain {
+    @apply
+    w-full 
+    bg-black 
+    fixed 
+    top-0 
+    left-0 
+    right-0 
+    z-10
+}
+
+.navBarContainer {
+    @apply
+    justify-between 
+    px-4 
+    mx-auto 
+    lg:max-w-7xl 
+    md:items-center 
+    md:flex 
+    md:px-8
+}
+
+.containerItemsWhenSmall {
+    @apply
+    flex 
+    items-center 
+    justify-between 
+    py-3 
+    md:py-5 
+    md:block
+}
+
+.hamburger {
+    @apply
+    focus:border-none 
+    active:border-none
+}
+
+.containerItems {
+    @apply
+    flex-1 
+    justify-self-center 
+    pb-3 
+    mt-8 
+    md:block 
+    md:pb-0 
+    md:mt-0
+}
+
+.containerItemsUl {
+    @apply
+    h-screen 
+    md:h-auto 
+    items-center 
+    justify-center 
+    md:flex 
+    font-rajdhani
+}
+
+.containerItemsLi {
+    @apply
+    text-xl 
+    text-white 
+    py-2 
+    text-center 
+    border-b-2 
+    hover:bg-cyan-600  
+    border-cyan-700  
+    md:px-6
+    md:border-b-0  
+    md:hover:text-cyan-600 
+    md:hover:bg-transparent
+}

@@ -1,0 +1,50 @@
+.sectionBlackOnWhite {
+	@apply
+	text-white 
+	h-screen 
+	bg-black 
+	text-center 
+	flex
+}
+
+.sectionBlackOnWhiteH1 {
+	@apply
+	m-auto 
+	font-rajdhani 
+	text-7xl 
+	text-white 
+	font-bold
+}
+
+.sectionWhiteOnBlack {
+	@apply
+	text-black 
+	h-screen 
+	bg-white 
+	text-center 
+	flex
+}
+
+.sectionWhiteOnBlackH1 {
+	@apply
+	m-auto 
+	font-rajdhani 
+	text-7xl 
+	text-black 
+	font-bold
+}
+
+.spotify {
+	@apply
+	fixed
+	bottom-0
+	right-1/2
+	transform
+	translate-x-32
+	w-72
+	overflow-hidden
+	mb-2
+	md:ml-6
+	md:left-0
+	md:translate-x-0
+}

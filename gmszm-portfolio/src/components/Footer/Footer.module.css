@@ -1,0 +1,60 @@
+.footerMain {
+    @apply
+    w-fit
+    fixed 
+    bottom-0 
+    right-0 
+    z-10
+    mb-2
+    mr-2
+}
+
+.footerContainer {
+    @apply
+    justify-between 
+    px-4 
+    mx-auto 
+    lg:max-w-7xl 
+    md:items-center 
+    md:flex 
+}
+
+.linkedin {
+    @apply
+    mx-2
+    bg-[url('/img/linkedin.svg')]
+    bg-cover
+    w-9
+    h-9
+    hover:bg-[url('/img/linkedin-blue.svg')]
+}
+
+.github {
+    @apply
+    mx-2
+    bg-[url('/img/github.svg')]
+    bg-cover
+    w-9
+    h-9
+    hover:bg-[url('/img/github-blue.svg')]
+}
+
+.codewars {
+    @apply
+    mx-2
+    bg-[url('/img/codewars.svg')]
+    bg-cover
+    w-9
+    h-9
+    hover:bg-[url('/img/codewars-blue.svg')]
+}
+
+.hackerrank {
+    @apply
+    mx-2
+    bg-[url('/img/hackerrank.svg')]
+    bg-cover
+    w-9
+    h-9
+    hover:bg-[url('/img/hackerrank-blue.svg')]
+}

@@ -1,0 +1,48 @@
+.section {
+	width: 400px;
+	height: 400px;
+	float: left;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: transform .6s ease-in-out;
+    /* Fixing a bug in firefox */
+    -moz-backface-visibility: hidden;
+}
+
+.frontTile, .backTile {
+	width: 90%;
+	height: 90%;
+	position: absolute;
+    border: black solid 3px;
+	backface-visibility: hidden;
+}
+
+.p {
+    color: black;
+    font-size: medium;
+    padding: 20px;
+}
+
+.img {
+	width: 70%;
+    vertical-align: middle;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.frontTile {
+	background: #FFFFFF;
+	/*z-index: 2;*/
+}
+
+.y .backTile {
+	background: #FFFFFF;
+    text-align: left;
+	transform: rotateY(.5turn);
+}
+
+.y .section:hover {
+	transform: rotateY(.5turn);
+}
