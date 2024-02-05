@@ -31,9 +31,9 @@ const Contact = () => {
             MessageService.sendMessage(message)
             .then((response) => {
                 resetFields();
-                console.log(response.data)
+                console.log(response.data);
             }).catch((error) => {
-                console.log(error.response.data)
+                console.log(error.response.data);
                 console.log(error);
             });
         } else {
