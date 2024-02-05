@@ -36,6 +36,7 @@
 
 .spotify {
 	@apply
+	z-30
 	fixed
 	bottom-0
 	right-1/2

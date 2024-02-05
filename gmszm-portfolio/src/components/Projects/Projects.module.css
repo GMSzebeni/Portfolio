@@ -1,48 +1,209 @@
-.section {
-	width: 400px;
-	height: 400px;
-	float: left;
-	position: relative;
-	transform-style: preserve-3d;
-	transition: transform .6s ease-in-out;
-    /* Fixing a bug in firefox */
-    -moz-backface-visibility: hidden;
+.container {
+    @apply
+    relative
+    flex
+    justify-center
+    flex-col
+    z-0
+    md:flex-row
 }
 
-.frontTile, .backTile {
-	width: 90%;
-	height: 90%;
-	position: absolute;
-    border: black solid 3px;
-	backface-visibility: hidden;
+.section {
+	@apply
+    w-[350px]
+    h-[325px]
+    mx-auto
+    float-left
+    relative
+    flex
+    justify-center
+    items-center
+    backface-visibility-hidden
+    md:w-[700px]
+    md:h-[550px]
+    md:mt-[70px]
+    hover:cursor-pointer
+}
+
+.h2 {
+    @apply
+    text-white
+    text-sm
+    font-thin
+    md:text-xl
+}
+
+.h3 {
+    @apply
+    text-white
+    text-xs
+    mt-2
+    mb-1
+    font-thin
+    md:text-lg
+    md:mt-4
+    md:mb-2
 }
 
 .p {
-    color: black;
-    font-size: medium;
-    padding: 20px;
+    @apply
+    text-white
+    text-[0.5rem]   
+    leading-tight
+    text-justify
+    font-thin
+    md:text-base
+    md:leading-4
 }
 
 .img {
-	width: 70%;
-    vertical-align: middle;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    @apply
+    w-1/2
+    align-middle
+    absolute
+    left-1/2
+    top-1/2
+    transform
+    -translate-x-1/2
+    -translate-y-1/2
+}
+
+.frontTile, .backTile {
+    @apply
+    w-[90%]
+	h-[90%]
+    p-2
+	absolute
+    border-solid
+    border-[3px]
+	backface-visibility-hidden
+    transform-style-preserve-3d
+    transition-transform
+    duration-700
+    ease-in-out
+    border-black
+    shadow
+    shadow-gray-500
+    md:p-6
+    hover:border-cyan-600 
+    hover:shadow-cyan-500
 }
 
 .frontTile {
-	background: #FFFFFF;
-	/*z-index: 2;*/
+	@apply
+    bg-black
 }
 
-.y .backTile {
-	background: #FFFFFF;
-    text-align: left;
-	transform: rotateY(.5turn);
+.backTile {
+	@apply
+    bg-black
+    text-left    
 }
 
-.y .section:hover {
-	transform: rotateY(.5turn);
+.blobs_1, .blobs_2, .blobs_3, .blobs_4, .blobs_5, .blobs_6, .blobs_7 {
+    @apply
+    block
+    absolute
+    mix-blend-color
+    rounded-for-blobs-1
+    animate-blobs
+    mt-[50px]
+    ms-[70px]
+}
+
+.blobs_1 {
+    @apply
+    bg-[#ff1493]
+    w-[30px]
+    h-[30px]
+    top-[110px]
+    left-[240px]
+    animation-delay-1000
+    md:w-[60px]
+    md:h-[60px]
+    md:top-[520px]
+    md:left-[1000px]
+}
+
+.blobs_2{
+    @apply
+	bg-[#ff4500]
+    w-[40px]
+    h-[40px]
+    -top-[60px]
+    left-[90px]
+    animation-delay-2000
+    md:w-[80px]
+    md:h-[80px]
+    md:top-[510px]
+    md:left-[1250px]
+}
+
+.blobs_3{
+    @apply
+	bg-[#00ff00]
+	w-[25px]
+    h-[25px]
+    top-[315px]
+	-left-[110px]
+    animation-delay-3000
+    md:w-[50px]
+    md:h-[50px]
+    md:top-[340px]
+	md:left-[1320px]
+}
+
+.blobs_4{
+    @apply
+	bg-[#ff0000]
+	w-[50px]
+	h-[50px]
+	top-[135px]
+	left-[125px]
+    animation-delay-4000
+    md:w-[100px]
+	md:h-[100px]
+	md:-top-[20px]
+	md:-left-[60px]
+}
+
+.blobs_5{
+    @apply
+	bg-[#ffff00]
+	w-[20px]
+	h-[20px]
+	top-[20px]
+	left-[165px]
+    md:w-[40px]
+	md:h-[40px]
+	md:top-[290px]
+	md:left-[610px]
+}
+
+.blobs_6{
+    @apply
+	bg-[#00ffff]
+	w-[35px]
+	h-[35px]
+	top-[360px]
+	left-[65px]
+    animation-delay-1000
+    md:w-[60px]
+	md:h-[60px]
+	md:top-[10px]
+	md:left-[200px]
+}
+
+.blobs_7{
+    @apply
+	bg-[#ff8c00]
+	w-[20px]
+	h-[20px]
+	top-[140px]
+	left-[185px]
+    animation-delay-2000
+    md:w-[40px]
+	md:h-[40px]
+	md:top-[240px]
+	md:-left-[100px]
 }

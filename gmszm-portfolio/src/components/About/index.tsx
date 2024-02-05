@@ -15,7 +15,7 @@ const About = () => {
                 <div className={styles.blobs_7}></div>
             </div>
             <div className={styles.bio}>
-                <p>Hi! I'm Gabriella and I am a Java Backend Developer. 
+                <p>Hi! I am Gabriella and I am a Java Backend Developer. 
                     I am passionate about coding. 
                     I love to understand how things work and how they are related to each other. 
                     I created this page to better show my work.

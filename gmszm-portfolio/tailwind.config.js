@@ -24,7 +24,10 @@ export const theme = {
       'md': '0.375rem',
       'lg': '0.5rem',
       'full': '9999px',
-      'for-blobs': '26% 74% 61% 39% / 54% 67% 33% 46%'
+      'for-blobs-1': '26% 74% 61% 39% / 54% 67% 33% 46%',
+      'for-blobs-2': '74% 26% 47% 53% / 68% 46% 54% 32%',
+      'for-blobs-3': '48% 52% 30% 70% / 27% 37% 63% 73%',
+      'for-blobs-4': '73% 27% 57% 43% / 28% 67% 33% 72%'
     },
     keyframes: {
       blobs: {
@@ -50,12 +53,13 @@ export const theme = {
       '3000': '3000ms',
       '4000': '4000ms'
     },
-    backface: {
-      'visible': 'visible',
-      'hidden': 'hidden'
+    backfaceVisibility: {
+      visible: 'visible',
+      hidden: 'hidden'
     },
     y: {
-      '0.5': '.5turn'
+      '0.5': '180deg',
+      '0': '0deg'
     },
     tStyle: {
       'flat': 'flat',
@@ -81,21 +85,24 @@ export const plugins = [
     ),
     matchUtilities({
       'backface-visibility': (value) => ({
-        backface: value,
+        'backface-visibility': value,
       }),
+      '-moz-backface-visibility': (value) => ({
+        '-moz-backface-visibility': value,
+      })
     },
-    { values: theme('backface') }
+    { values: { ...theme('backfaceVisibility'), 'visible': 'visible' } }
     ),
     matchUtilities({
       'rotateY': (value) => ({
-        y: value,
+        transform: 'rotateY('+(value)+')',
       }),
     },
     { values: theme('y') }
     ),
     matchUtilities({
       'transform-style': (value) => ({
-        tStyle: value,
+        'transform-style': value,
       }),
     },
     { values: theme('tStyle') }
