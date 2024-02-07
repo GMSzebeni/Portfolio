@@ -7,8 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMethod;
 
-@CrossOrigin(origins = "https://www.gmszm.hu")
+@CrossOrigin(origins = "https://www.gmszm.hu", methods = {RequestMethod.POST})
 @Controller
 public class MainController {
     private final MessageService messageService;
@@ -26,7 +27,7 @@ public class MainController {
         } catch (MessagingException e) {
             return ResponseEntity.badRequest().body("message: " + e.getMessage() + "\ncause: " + e.getCause());
         } catch (MessageBadRequestException e) {
-            return ResponseEntity.status(e.getStatus()).body(e.getMessage());
+            return ResponseEntity.status(e.getStatus()).body(e.getMessage() + "this is the update");
         }
     }
 }
