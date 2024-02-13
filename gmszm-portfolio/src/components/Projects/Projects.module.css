@@ -3,15 +3,19 @@
     relative
     flex
     justify-center
-    flex-col
-    z-0
-    md:flex-row
+    z-0    
+}
+
+.sectionGrids {
+    @apply
+    grid grid-cols-1 gap-1
+    md:grid-cols-2
 }
 
 .section {
 	@apply
-    w-[350px]
-    h-[325px]
+    w-[75vw]
+    h-[65vw]
     mx-auto
     float-left
     relative
@@ -19,8 +23,8 @@
     justify-center
     items-center
     backface-visibility-hidden
-    md:w-[700px]
-    md:h-[550px]
+    md:w-[36vw]
+    md:h-[28vw]
     md:mt-[70px]
     hover:cursor-pointer
 }
