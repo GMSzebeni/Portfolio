@@ -59,8 +59,8 @@
 .spotify {
 	@apply
 	absolute
-	-left-[232px]
-	-top-10
+	-left-[236px]
+	-top-[43px]
 	w-full
 	h-full
 	border-4
