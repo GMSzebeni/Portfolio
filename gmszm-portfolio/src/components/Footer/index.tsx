@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css'
 
 
-const Footer = () => {
+const Footer = async () => {
     const openLinkedin = (e: { preventDefault: () => void; }) => {
         window.open("https://www.linkedin.com/in/gabriella-sz-m/", "_blank")
     }

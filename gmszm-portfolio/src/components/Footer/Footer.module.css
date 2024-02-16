@@ -11,12 +11,11 @@
 
 .footerContainer {
     @apply
-    justify-between 
+    flex
+    items-center
     px-4 
     mx-auto 
-    lg:max-w-7xl 
-    md:items-center 
-    md:flex 
+    lg:max-w-7xl
 }
 
 .linkedin, .github, .codewars, .hackerrank {

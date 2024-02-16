@@ -10,15 +10,22 @@ export default function Home() {
 	return (
 		<div>
 			<Navbar />
-			<iframe 
-				className={styles.spotify}
-				src="https://open.spotify.com/embed/track/1300POeOaj8qho30FRHjgf?utm_source=generator&theme=0" 
-				width="100%" height="80"
-				scrolling="no"
-				allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-				loading="lazy">
-			</iframe>
-			<Footer />
+			<div className={styles.footer}>
+				<div className={styles.spotifyContainer}>
+					<div className={styles.spotifyIframeContainer}>
+						<iframe
+							className={styles.spotify}
+							src="https://open.spotify.com/embed/track/1300POeOaj8qho30FRHjgf?utm_source=generator&theme=0" 
+							width="100%" height="80"
+							scrolling="no"
+							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+							loading="lazy">
+						</iframe>
+					</div>
+				</div>
+				<Footer />
+			</div>
+			
 			<section
 		  		id="about"
 				className={styles.sectionBlackOnWhite}>

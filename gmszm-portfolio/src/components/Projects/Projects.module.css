@@ -8,14 +8,19 @@
 
 .sectionGrids {
     @apply
-    grid grid-cols-1 gap-1
+    mt-16
+    grid 
+    grid-cols-1 
+    gap-1
     md:grid-cols-2
+    md:gap-3
+    md:mt-[70px]
 }
 
 .section {
 	@apply
-    w-[75vw]
-    h-[65vw]
+    w-[50vh]
+    h-[40vh]
     mx-auto
     float-left
     relative
@@ -25,7 +30,6 @@
     backface-visibility-hidden
     md:w-[36vw]
     md:h-[28vw]
-    md:mt-[70px]
     hover:cursor-pointer
 }
 
