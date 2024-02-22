@@ -1,67 +1,69 @@
 .container {
     @apply
-    relative
+    pt-16
     flex
+    items-center
     justify-center
+    h-screen
+    w-[95vw]
+    relative
     z-0    
 }
 
 .sectionGrids {
     @apply
-    mt-16
     grid 
     grid-cols-1 
     gap-1
-    md:grid-cols-2
-    md:gap-3
-    md:mt-[70px]
+    z-10
+    lg:grid-cols-2
+    lg:gap-3
 }
 
 .section {
 	@apply
-    w-[50vh]
-    h-[40vh]
-    mx-auto
+    w-[40vh]
+    h-[30vh]
     float-left
     relative
     flex
     justify-center
     items-center
     backface-visibility-hidden
-    md:w-[36vw]
-    md:h-[28vw]
+    lg:w-[36vw]
+    lg:h-[28vw]
     hover:cursor-pointer
 }
 
 .h2 {
     @apply
     text-white
-    text-sm
+    text-[calc(1.5vw+2vh)]/[calc(2vw+2vh)]    
     font-thin
-    md:text-xl
+    lg:text-[calc(1.4vw+1.4vh)]/[calc(2vw+0.6vh)]
 }
 
 .h3 {
     @apply
     text-white
-    text-xs
-    mt-2
-    mb-1
+    text-[calc(0.6vw+1.5vh)]/[calc(1vw+0.9vh)]
+    mt-3
+    mb-2
     font-thin
-    md:text-lg
-    md:mt-4
-    md:mb-2
+    lg:text-[calc(0.8vw+0.8vh)]/[calc(1vw+0.08vh)]
+    lg:mt-4
+    lg:mb-2
 }
 
 .p {
     @apply
     text-white
-    text-[0.5rem]   
+    text-[calc(0.49vw+1.2vh)]  
     leading-tight
     text-justify
     font-thin
-    md:text-base
-    md:leading-4
+    lg:text-[calc(0.6vw+0.6vh)]
+    lg:leading-4
 }
 
 .img {
@@ -80,7 +82,7 @@
     @apply
     w-[90%]
 	h-[90%]
-    p-2
+    p-4
 	absolute
     border-solid
     border-[3px]
@@ -92,7 +94,8 @@
     border-black
     shadow
     shadow-gray-500
-    md:p-6
+    z-30
+    lg:p-6
     hover:border-cyan-600 
     hover:shadow-cyan-500
 }
@@ -105,7 +108,8 @@
 .backTile {
 	@apply
     bg-black
-    text-left    
+    text-left
+    scrollbar-thin scrollbar-thumb-cyan-600 scrollbar-track-black overflow-y-scroll
 }
 
 .blobs_1, .blobs_2, .blobs_3, .blobs_4, .blobs_5, .blobs_6, .blobs_7 {
@@ -115,103 +119,100 @@
     mix-blend-color
     rounded-for-blobs-1
     animate-blobs
-    mt-[50px]
-    ms-[70px]
+    z-10
 }
 
 .blobs_1 {
     @apply
     bg-[#ff1493]
-    w-[30px]
-    h-[30px]
-    top-[110px]
-    left-[240px]
     animation-delay-1000
-    md:w-[60px]
-    md:h-[60px]
-    md:top-[520px]
-    md:left-[1000px]
+    w-[45px]
+    h-[45px]
+    bottom-[12vh]
+    right-[35vw]
+    lg:w-[60px]
+    lg:h-[60px]
+    lg:bottom-[19vh]
+    lg:right-[25vw]
 }
 
-.blobs_2{
+.blobs_2 {
     @apply
-	bg-[#ff4500]
-    w-[40px]
-    h-[40px]
-    -top-[60px]
-    left-[90px]
+    bg-[#ff4500]
     animation-delay-2000
-    md:w-[80px]
-    md:h-[80px]
-    md:top-[510px]
-    md:left-[1250px]
+    w-[60px]
+    h-[60px]
+    bottom-[11vh]
+    right-[10vw]
+    lg:w-[80px]
+    lg:h-[80px]
+    lg:bottom-[18vh]
+    lg:right-[12vw]
 }
 
-.blobs_3{
+.blobs_3 {
     @apply
-	bg-[#00ff00]
-	w-[25px]
-    h-[25px]
-    top-[315px]
-	-left-[110px]
+    bg-[#00ff00]
     animation-delay-3000
-    md:w-[50px]
-    md:h-[50px]
-    md:top-[340px]
-	md:left-[1320px]
+	w-[37.5px]
+    h-[37.5px]
+    bottom-[27vh]
+	right-[4vw]
+    lg:w-[50px]
+    lg:h-[50px]
+    lg:bottom-[40vh]
+	lg:right-[8vw]
 }
 
-.blobs_4{
+.blobs_4 {
     @apply
-	bg-[#ff0000]
-	w-[50px]
-	h-[50px]
-	top-[135px]
-	left-[125px]
+    bg-[#ff0000]
     animation-delay-4000
-    md:w-[100px]
-	md:h-[100px]
-	md:-top-[20px]
-	md:-left-[60px]
+	w-[75px]
+	h-[75px]
+    top-[18vh]
+    left-[10vw]
+    lg:w-[100px]
+    lg:h-[100px]
+    lg:top-[22vh]
+    lg:left-[11vw]
 }
 
-.blobs_5{
+.blobs_5 {
     @apply
-	bg-[#ffff00]
-	w-[20px]
-	h-[20px]
-	top-[20px]
-	left-[165px]
-    md:w-[40px]
-	md:h-[40px]
-	md:top-[290px]
-	md:left-[610px]
+    bg-[#ffff00]
+	w-[30px]
+	h-[30px]
+	top-[52%]
+	left-[49%]
+    lg:w-[40px]
+	lg:h-[40px]
 }
 
-.blobs_6{
+.blobs_6 {
     @apply
-	bg-[#00ffff]
-	w-[35px]
-	h-[35px]
-	top-[360px]
-	left-[65px]
+    bg-[#00ffff]
     animation-delay-1000
-    md:w-[60px]
-	md:h-[60px]
-	md:top-[10px]
-	md:left-[200px]
+	w-[45px]
+	h-[45px]
+    top-[18vh]
+    left-[35vw]
+    lg:w-[60px]
+	lg:h-[60px]
+	lg:top-[25vh]
+	lg:left-[28vw]
 }
 
-.blobs_7{
+.blobs_7 {
     @apply
-	bg-[#ff8c00]
-	w-[20px]
-	h-[20px]
-	top-[140px]
-	left-[185px]
+    bg-[#ff8c00]
     animation-delay-2000
-    md:w-[40px]
-	md:h-[40px]
-	md:top-[240px]
-	md:-left-[100px]
+	w-[30px]
+	h-[30px]
+    top-[33vh]
+	left-[4vw]
+    lg:w-[40px]
+	lg:h-[40px]
+	lg:top-[48vh]
+	lg:left-[9vw]
 }
