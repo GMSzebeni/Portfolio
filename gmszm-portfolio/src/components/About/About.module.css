@@ -18,10 +18,10 @@
     transform 
     -translate-x-32
     -translate-y-1/2
-    xs:w-[358px]
+    xs:w-[357px]
     xs:h-[280px]
     xs:-translate-x-28
-    xs:-translate-y-1/2
+    xs:-translate-y-3/4
     md:-translate-x-1/2
 }
 
@@ -30,12 +30,12 @@
     absolute
     text-sm
     font-thin
-    w-28
+    w-40
     text-justify
     transform 
     translate-x-7
     -translate-y-1/2
-    xs:translate-x-5
+    xs:-translate-x-9
     xs:-translate-y-1/3
     md:text-lg
     md:w-72
@@ -55,7 +55,7 @@
 	content-center
 	justify-center
     relative
-    xs:text-8xl
+    xs:text-9xl
     xs:pl-9
     xs:pt-9
     md:text-[240px]
@@ -106,8 +106,8 @@
 	bg-[#00ff00]
 	w-[30px]
     h-[30px]
-    top-[118px]
-	left-[20px]
+    top-[120px]
+	left-[10px]
     animation-delay-3000
     md:w-[60px]
     md:h-[60px]
