@@ -82,6 +82,7 @@
     animation-delay-3000
     md:w-[50px]
     md:h-[50px]
+	xs:-left-[102px]
     md:top-[430px]
 	md:-left-[150px]
 }
@@ -96,6 +97,7 @@
     animation-delay-4000
     md:w-[100px]
 	md:h-[100px]
+    xs:left-[120px]
 	md:top-[190px]
 	md:left-[170px]
 }
@@ -109,6 +111,7 @@
 	left-[165px]
     md:w-[40px]
 	md:h-[40px]
+	xs:left-[150px]
 	md:top-[40px]
 	md:left-[250px]
 }

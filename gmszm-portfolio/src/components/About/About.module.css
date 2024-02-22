@@ -18,6 +18,10 @@
     transform 
     -translate-x-32
     -translate-y-1/2
+    xs:w-[358px]
+    xs:h-[280px]
+    xs:-translate-x-28
+    xs:-translate-y-1/2
     md:-translate-x-1/2
 }
 
@@ -31,6 +35,8 @@
     transform 
     translate-x-7
     -translate-y-1/2
+    xs:translate-x-5
+    xs:-translate-y-1/3
     md:text-lg
     md:w-72
     md:-translate-x-6
@@ -49,6 +55,9 @@
 	content-center
 	justify-center
     relative
+    xs:text-8xl
+    xs:pl-9
+    xs:pt-9
     md:text-[240px]
     md:text-shadow
 }

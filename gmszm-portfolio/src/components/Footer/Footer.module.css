@@ -1,10 +1,9 @@
 .footerMain {
     @apply
-    w-fit
     fixed 
-    bottom-0 
+    bottom-0
     right-0 
-    z-10
+    z-20
     mb-2
     mr-2
 }
@@ -24,6 +23,8 @@
     bg-cover
     w-9
     h-9
+    xs:w-7
+    xs:h-7
     hover:cursor-pointer
 }
 

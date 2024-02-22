@@ -41,11 +41,12 @@
 
 .spotifyContainer {
 	@apply
-	z-30
+	z-20
 	fixed
 	left-8
 	-bottom-9
 	overflow-hidden
+	xs:-bottom-10
 }
 
 .spotifyIframeContainer {
