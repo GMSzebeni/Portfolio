@@ -10,21 +10,17 @@ const Projects = () => {
 
     return(        
         <div className={styles.container}>
-            <div className={styles.blobs}>
-                <div className={styles.blobs_1}></div>
-                <div className={styles.blobs_2}></div>
-                <div className={styles.blobs_3}></div>
-                <div className={styles.blobs_4}></div>
-                <div className={styles.blobs_5}></div>
-                <div className={styles.blobs_6}></div>
-                <div className={styles.blobs_7}></div>
-            </div>
+            <div className={styles.blobs_1}></div>
+            <div className={styles.blobs_2}></div>
+            <div className={styles.blobs_3}></div>
+            <div className={styles.blobs_4}></div>
+            <div className={styles.blobs_5}></div>
+            <div className={styles.blobs_6}></div>
+            <div className={styles.blobs_7}></div>
             <div className={styles.sectionGrids}>
                 <section className={styles.section} onClick={(): void => handleRotate(0)}>
                     <div className={`${styles.frontTile} ${rotateStates[0] ? 'rotateY-0.5' : 'rotateY-0'}`}>
-                        <div>
-                            <img className= {styles.img} src="img/hta_logo_v3.png" alt="hta app logo" />
-                        </div>
+                        <img className= {styles.img} src="img/hta_logo_v3.png" alt="hta app logo" />
                     </div>
                     <div className={`${styles.backTile} ${rotateStates[0] ? 'rotateY-0' : 'rotateY-0.5'}`}>
                         <h2 className={styles.h2}>Health Tracking Application</h2>
@@ -73,7 +69,6 @@ const Projects = () => {
                     </div>
                 </section>
             </div>
-	        
         </div>
     )
 }
