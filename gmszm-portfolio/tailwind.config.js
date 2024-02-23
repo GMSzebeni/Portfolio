@@ -8,11 +8,11 @@ export const content = [
 export const theme = {
   extend: {
     screens: {
-      'turned': { 'raw': '(max-height: 450px)' },
+      'turned': { 'raw': '(max-height: 413px)' },
       'xs': { 'max': '639px' },
       'sm': '640px',
       'md': [
-        { 'min': '768px', 'max': '805px' },
+        { 'min': '768px', 'max': '811px' },
         { 'min': '1025px' }
       ],
       'lg': '1025px',
