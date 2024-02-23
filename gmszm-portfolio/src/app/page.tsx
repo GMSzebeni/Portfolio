@@ -19,7 +19,7 @@ export default function Home() {
 							width="100%" height="80"
 							scrolling="no"
 							allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-							loading="lazy">
+							loading="eager">
 						</iframe>
 					</div>
 				</div>
