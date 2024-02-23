@@ -18,9 +18,14 @@ const Projects = () => {
             <div className={styles.blobs_6}></div>
             <div className={styles.blobs_7}></div>
             <div className={styles.sectionGrids}>
-                <section className={styles.section} onClick={(): void => handleRotate(0)}>
+                <section 
+                    className={styles.section} 
+                    onClick={(): void => handleRotate(0)}>
                     <div className={`${styles.frontTile} ${rotateStates[0] ? 'rotateY-0.5' : 'rotateY-0'}`}>
-                        <img className= {styles.img} src="img/hta_logo_v3.png" alt="hta app logo" />
+                        <img 
+                            className= {styles.img} 
+                            src="img/hta_logo_v3.png" 
+                            alt="hta app logo" />
                     </div>
                     <div className={`${styles.backTile} ${rotateStates[0] ? 'rotateY-0' : 'rotateY-0.5'}`}>
                         <h2 className={styles.h2}>Health Tracking Application</h2>
@@ -47,13 +52,16 @@ const Projects = () => {
                         </p>
                     </div>
                 </section>
-                <section className={styles.section} onClick={(): void => handleRotate(1)}>
+                <section 
+                    className={styles.section} 
+                    onClick={(): void => handleRotate(1)}>
                     <div className={`${styles.frontTile} ${rotateStates[1] ? 'rotateY-0.5' : 'rotateY-0'}`}>
-                    {/* <div className={`${styles.frontTile} ${rotateFront}`}> */}
-                        <img className= {styles.img} src="img/brewdog.jpg" alt="brewdog logo" />
+                        <img 
+                            className= {styles.img} 
+                            src="img/brewdog.jpg"
+                            alt="brewdog logo" />
                     </div>
                     <div className={`${styles.backTile} ${rotateStates[1] ? 'rotateY-0' : 'rotateY-0.5'}`}>
-                    {/* <div className={`${styles.backTile} ${rotateBack}`}> */}
                         <h2 className={styles.h2}>Listing Brewdog beers with pagination</h2>
                         <h3 className={styles.h3}>Technologies</h3>
                         <p className={styles.p}>Languages: TypeScript</p>
