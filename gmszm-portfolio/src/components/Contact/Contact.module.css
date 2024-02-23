@@ -7,6 +7,21 @@
     text-sm
     md:text-lg
     md:mt-20
+    turned:overflow-y-clip
+    turned:w-[440px]
+}
+
+.form {
+    @apply
+    turned:leading-none
+    turned:grid
+    turned:grid-cols-2
+    turned:gap-3
+}
+
+.formSection {
+    @apply
+    turned:leading-none
 }
 
 .label {
@@ -14,6 +29,8 @@
     text-sm
     font-thin
     md:text-lg
+    turned:text-xs
+    turned:leading-none
 }
 
 .input {
@@ -30,6 +47,12 @@
     focus:border-2
     outline-none
     md:text-lg
+    turned:leading-none
+}
+
+.messageArea {
+    @apply
+    turned:max-h-14
 }
 
 .submit {
@@ -45,6 +68,11 @@
     hover:bg-cyan-600
     hover:text-black
     md:text-2xl
+    turned:mt-0
+    turned:col-start-2
+    turned:row-start-1
+    turned:border-2
+    turned:border-cyan-600
 }
 
 .blobs_2, .blobs_3, .blobs_4, .blobs_5, .blobs_6 {
@@ -70,6 +98,8 @@
     md:h-[80px]
     md:-top-[80px]
     md:left-[110px]
+    turned:-top-8
+    turned:left-[340px]
 }
 
 .blobs_3{
@@ -80,11 +110,13 @@
     top-[315px]
 	-left-[110px]
     animation-delay-3000
+    xs:-left-[102px]
     md:w-[50px]
     md:h-[50px]
-	xs:-left-[102px]
     md:top-[430px]
 	md:-left-[150px]
+    turned:top-20
+    turned:-left-36
 }
 
 .blobs_4{
@@ -95,11 +127,13 @@
 	top-[135px]
 	left-[125px]
     animation-delay-4000
+    xs:left-[120px]
     md:w-[100px]
 	md:h-[100px]
-    xs:left-[120px]
 	md:top-[190px]
 	md:left-[170px]
+    turned:top-12
+    turned:left-[360px]
 }
 
 .blobs_5{
@@ -109,11 +143,13 @@
 	h-[20px]
 	top-[20px]
 	left-[165px]
+    xs:left-[150px]
     md:w-[40px]
 	md:h-[40px]
-	xs:left-[150px]
 	md:top-[40px]
 	md:left-[250px]
+    turned:top-4
+    turned:left-[420px]
 }
 
 .blobs_6{
@@ -128,4 +164,6 @@
 	md:h-[60px]
 	md:top-[520px]
 	md:-left-[60px]
+    turned:top-32
+    turned:-left-32
 }

@@ -5,6 +5,7 @@
     items-end
     mt-5
     md:mt-20
+    turned:mt-0
 }
 
 .inits {
@@ -23,6 +24,8 @@
     xs:-translate-x-28
     xs:-translate-y-3/4
     md:-translate-x-1/2
+    turned:-translate-x-28
+    turned:-translate-y-1/4
 }
 
 .bio {
@@ -87,7 +90,7 @@
     md:left-[350px]
 }
 
-.blobs_2{
+.blobs_2 {
     @apply
 	bg-[#ff4500]
     w-[40px]
@@ -101,7 +104,7 @@
     md:left-[230px]
 }
 
-.blobs_3{
+.blobs_3 {
     @apply
 	bg-[#00ff00]
 	w-[30px]
@@ -115,7 +118,7 @@
 	md:left-[-90px]
 }
 
-.blobs_4{
+.blobs_4 {
     @apply
 	bg-[#ff0000]
 	w-[50px]

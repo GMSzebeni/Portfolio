@@ -52,6 +52,7 @@ const Contact = () => {
             </div>
             <div className={styles.form}>
                 <div>
+                <div className={styles.formSection}>
                     <label 
                         className={styles.label}
                         htmlFor="name">
@@ -67,7 +68,7 @@ const Contact = () => {
                         required={true} />
                 </div>
                 <br />
-                <div>
+                <div className={styles.formSection}>
                     <label 
                         className={styles.label}
                         htmlFor="email">
@@ -83,7 +84,7 @@ const Contact = () => {
                         required={true} />
                 </div>             
                 <br />   
-                <div>
+                <div className={styles.formSection}>
                     <label 
                         className={styles.label}
                         htmlFor="subject">
@@ -99,14 +100,14 @@ const Contact = () => {
                         required={true} />
                 </div>     
                 <br />           
-                <div>
+                <div className={styles.formSection}>
                     <label 
                         className={styles.label}
                         htmlFor="messageText">
                         Message</label>
                     <br />
                     <textarea 
-                        className={styles.input}
+                        className={`${styles.input} ${styles.messageArea}`}
                         name="messageText" 
                         id="messageText" 
                         maxLength={600}
@@ -123,6 +124,7 @@ const Contact = () => {
                     value={message.honeypot}
                     onChange={(e) => handleChange(e)}
                     id="honeypot" />
+                    </div>
                 <button 
                     className={styles.submit} 
                     type='submit'

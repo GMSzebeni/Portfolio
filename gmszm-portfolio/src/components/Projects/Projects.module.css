@@ -18,6 +18,8 @@
     z-10
     lg:grid-cols-2
     lg:gap-3
+    turned:grid-cols-2
+    turned:gap-3
 }
 
 .section {
@@ -32,6 +34,8 @@
     backface-visibility-hidden
     lg:w-[36vw]
     lg:h-[28vw]
+    turned:w-[36vw]
+    turned:h-[28vw]
     hover:cursor-pointer
 }
 
@@ -53,6 +57,7 @@
     lg:text-[calc(0.8vw+0.8vh)]/[calc(1vw+0.08vh)]
     lg:mt-4
     lg:mb-2
+    turned:text-[calc(1.3vw+1.3vh)]/[calc(2vw+0.6vh)]
 }
 
 .p {
@@ -64,6 +69,7 @@
     font-thin
     lg:text-[calc(0.6vw+0.6vh)]
     lg:leading-4
+    turned:text-[calc(1.2vw+1.2vh)]/[calc(2vw+0.6vh)]
 }
 
 .img {
