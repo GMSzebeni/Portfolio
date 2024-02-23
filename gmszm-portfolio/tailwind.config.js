@@ -8,7 +8,7 @@ export const content = [
 export const theme = {
   extend: {
     screens: {
-      'turned': { 'raw': '(max-height: 413px)' },
+      'turned': { 'raw': '(max-height: 450px)' },
       'xs': { 'max': '639px' },
       'sm': '640px',
       'md': [
