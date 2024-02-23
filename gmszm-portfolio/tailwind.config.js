@@ -8,9 +8,10 @@ export const content = [
 export const theme = {
   extend: {
     screens: {
-      'xs': {'max': '639px'},
+      'turned': { 'raw': '(max-height: 450px)' },
+      'xs': { 'max': '639px' },
       'sm': '640px',
-      'md': '768px',
+      'md': { 'min': '768px', 'max': '843px' },
       'lg': '1025px',
       'xl': '1280px',
       '2xl': '1536px'
