@@ -11,7 +11,7 @@ export const theme = {
       'turned': { 'raw': '(max-height: 450px)' },
       'xs': { 'max': '639px' },
       'sm': '640px',
-      'md': { 'min': '768px', 'max': '843px' },
+      'md': { 'min': '768px', 'max': '811px' },
       'lg': '1025px',
       'xl': '1280px',
       '2xl': '1536px'
