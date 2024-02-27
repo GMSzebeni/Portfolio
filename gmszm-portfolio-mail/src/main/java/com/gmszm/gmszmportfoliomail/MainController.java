@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@CrossOrigin(origins = "https://www.gmszm.hu", methods = {RequestMethod.POST})
+@CrossOrigin(origins = {"https://www.gmszm.hu"/* , "https://console.cron-job.org/jobs/4903304" */}, methods = {RequestMethod.POST})
 @Controller
 public class MainController {
     private final MessageService messageService;
@@ -17,6 +17,16 @@ public class MainController {
     @Autowired
     public MainController(MessageService messageService) {
         this.messageService = messageService;
+    }
+
+    @PostMapping("/ping")
+    public ResponseEntity<?> pingToKeepAlive(@RequestBody(required = false) String validator) {
+        try {
+            String response = messageService.pinger(validator);
+            return ResponseEntity.ok().body(response);
+        } catch (PingUnauthorizedException e) {
+            return ResponseEntity.status(e.getStatus()).body(e.getMessage());
+        }
     }
 
     @PostMapping("/send-message")
