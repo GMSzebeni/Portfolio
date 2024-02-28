@@ -60,16 +60,26 @@
     turned:text-[calc(1.3vw+1.3vh)]/[calc(2vw+0.6vh)]
 }
 
-.p {
+.p, .a {
     @apply
-    text-white
     text-[calc(0.49vw+1.2vh)]  
     leading-tight
-    text-justify
     font-thin
     lg:text-[calc(0.6vw+0.6vh)]
     lg:leading-4
     turned:text-[calc(1.2vw+1.2vh)]/[calc(2vw+0.6vh)]
+}
+
+.p {
+    @apply
+    text-white
+    text-justify
+}
+
+.a {
+    @apply
+    text-cyan-600
+    hover:underline
 }
 
 .img {

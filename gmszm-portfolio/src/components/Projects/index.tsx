@@ -50,6 +50,12 @@ const Projects = () => {
                             similarities - can be accessed via the API. There is built in logging of events. Development is supported with unit 
                             tests and CI. 
                         </p>
+                        <a 
+                            className={styles.a} 
+                            href="https://github.com/GMSzebeni/Health-Tracking-Application"
+                            target="_blank">
+                            GitHub link
+                        </a>
                     </div>
                 </section>
                 <section 
@@ -74,6 +80,12 @@ const Projects = () => {
                             description. As there are many beers, pagination is used to allow the user to swipe through the catalog. This is 
                             an Angular practice project.
                         </p>
+                        <a 
+                            className={styles.a} 
+                            href="https://github.com/GMSzebeni/brepi-gmszm"
+                            target="_blank">
+                            GitHub link
+                        </a>
                     </div>
                 </section>
             </div>
