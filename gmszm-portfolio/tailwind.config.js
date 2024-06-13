@@ -54,16 +54,38 @@ export const theme = {
         '80%': {borderRadius: '55% 45% 37% 63% / 38% 30% 70% 62%'},
         '90%': {borderRadius: '25% 75% 70% 30% / 39% 50% 50% 61%'},
         '100%': {borderRadius: '66% 34% 33% 67% / 65% 73% 27% 35%'}
+      },
+      slide: {
+        '0%': {transform: 'translateX(-20%)'},
+        '100%': {transform: 'translateX(20%)'}
       }
     },
     animation: {
-      blobs: 'blobs 15s ease-in-out infinite alternate'
+      blobs: 'blobs 15s ease-in-out infinite alternate',
+      slide: 'slide ease-in-out infinite'
+    },
+    animationDirection: {
+      'alternate': 'alternate',
+      'reverse': 'reverse',
+      'normal': 'normal',
+      'alt-rev': 'alternate-reverse'
     },
     animationDelay: {
       '1000': '1000ms',
       '2000': '2000ms',
       '3000': '3000ms',
       '4000': '4000ms'
+    },
+    animationDuration: {
+      '1': '1s',
+      '2': '2s',
+      '3': '3s',
+      '4': '4s',
+      '5': '5s'
+    },
+    backgroundImage: {
+      'ch-pattern-portion': 'linear-gradient(-60deg, rgb(206, 163, 157) 50%, rgb(255, 60, 0) 50%)',
+      'ch-pattern-target': 'linear-gradient(-60deg, rgb(154, 205, 50) 50%, rgb(0, 100, 0) 50%)'
     },
     backfaceVisibility: {
       visible: 'visible',
@@ -89,11 +111,25 @@ export const plugins = [
     { values: theme('textShadow') }
     ),
     matchUtilities({
+      'animation-direction': (value) => ({
+        animationDirection: value,
+      })
+    },
+    { values: theme('animationDirection') }
+    ),
+    matchUtilities({
       'animation-delay': (value) => ({
         animationDelay: value,
       }),
     },
     { values: theme('animationDelay') }
+    ),
+    matchUtilities({
+      'animation-duration': (value) => ({
+        animationDuration: value,
+      }),
+    },
+    { values: theme('animationDuration') }
     ),
     matchUtilities({
       'backface-visibility': (value) => ({

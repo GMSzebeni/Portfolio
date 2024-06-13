@@ -1,0 +1,183 @@
+.container {
+    @apply
+    text-black
+}
+
+.bg, .bg2, .bg3 {
+    @apply
+    animate-slide
+    bg-ch-pattern-target
+    inset-y-0
+    -inset-x-1/2
+    opacity-50
+    fixed
+    z-[-1]
+}
+
+.bg {
+    @apply
+    animation-direction-alternate
+    animation-duration-3
+}
+
+.bg2 {
+    @apply
+    animation-direction-alt-rev
+    animation-duration-4
+}
+
+.bg3 {
+    @apply
+    animation-duration-5
+}
+
+.ul {
+    @apply
+    list-none
+    overflow-hidden
+    bg-orange-400/60
+    fixed
+    bottom-0
+    w-full
+}
+
+.a {
+    @apply
+    block
+    text-white
+    text-center
+    px-[14px]
+    py-3
+    float-left
+    border-r-[1px]
+    border-solid
+    border-gray-500
+    hover:bg-orange-400
+    hover:text-black
+    hover:font-bold
+    md:py-4
+}
+
+.content {
+    @apply
+    py-3
+    max-h-[82vh]
+    bg-slate-900/10
+    rounded-[.25em]
+    shadow-[0_0_.25em_rgba(255,255,255,0.1)]
+    box-border
+    left-1/3
+    top-1/3
+    transform
+    -translate-x-1/4
+    -translate-y-1/3
+    fixed
+    text-center
+    scrollbar-thin 
+    scrollbar-thumb-indigo-500 
+    scrollbar-track-transparent 
+    overflow-y-scroll
+    md:p-5
+}
+
+.logo {
+    @apply
+    inline-flex
+    items-center
+    justify-center
+}
+
+.h1 {
+    @apply
+    my-5
+    py-2
+    px-1
+    text-lg
+    md:p-5
+    md:text-2xl
+}
+
+.img {
+    @apply
+    rounded-full
+    w-2/5
+    h-2/5
+    md:w-1/5
+    md:h-1/5
+}
+
+.form {
+    @apply
+    w-auto
+    h-auto
+    p-1
+}
+
+.formElement {
+    @apply
+    w-full
+    flex
+    flex-col
+    items-center
+    justify-center
+}
+
+.label {
+    @apply
+    inline-block
+    text-sm
+    mt-2
+    md:mt-5
+    md:text-lg
+}
+
+.input {
+    @apply
+    text-center
+    w-11/12
+    h-[3vw]
+    m-1
+    py-6
+    border-2
+    border-solid
+    border-cyan-700
+    rounded-lg
+    text-xs
+    focus:outline-none
+    focus:border-pink-600
+    md:text-lg
+}
+
+.h2 {
+    @apply
+    p-1.5
+    text-base
+    font-bold
+    mt-3
+    md:text-lg
+}
+
+.submit, .reset {
+    @apply
+    bg-gray-300
+    text-center
+    py-5
+    mt-5
+    border-2
+    border-solid
+    border-indigo-500
+    rounded-lg
+    text-xs
+    duration-500
+    w-[80%]
+    h-auto
+    hover:bg-green-400
+    md:text-lg
+    md:w-[40%]
+    md:m-5
+}
+
+.reset {
+    @apply
+    hover:bg-orange-300
+}
