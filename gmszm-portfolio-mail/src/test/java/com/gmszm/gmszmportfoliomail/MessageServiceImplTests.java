@@ -6,6 +6,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 
+import com.gmszm.gmszmportfoliomail.models.Message;
+import com.gmszm.gmszmportfoliomail.services.MessageService;
+import com.gmszm.gmszmportfoliomail.services.MessageServiceImpl;
+
 public class MessageServiceImplTests {
     MessageService messageService = new MessageServiceImpl(new JavaMailSenderImpl());
 
@@ -15,10 +19,10 @@ public class MessageServiceImplTests {
         Message message1 = null;
         assertFalse(messageService.checkMessageValidity(message1));
         //when honeypot is empty
-        Message message2 = new Message("John Doe", "email@email.com", "subject", "this is my message", "");
+        Message message2 = new Message("John Doe 2", "email2@email.com", "subject2", "this is my message2", "");
         assertTrue(messageService.checkMessageValidity(message2));
         //when honeypot is not empty
-        Message message3 = new Message("John Doe", "email@email.com", "subject", "this is my message", "honeypot");
+        Message message3 = new Message("John Doe 3", "email3@email.com", "subject3", "this is my message3", "honeypot");
         assertFalse(messageService.checkMessageValidity(message3));
         //when honeypot is null
         //when email is too short
