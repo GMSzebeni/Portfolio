@@ -53,7 +53,7 @@ const Target = () => {
             <ul className={styles.ul}>
                 <li>
                     <a 
-                        href="http://localhost:3000/ch-calculator/portion"
+                        href="https://gmszm.hu/ch-calculator/portion"
                         className={styles.a}>
                         PORTION
                     </a>

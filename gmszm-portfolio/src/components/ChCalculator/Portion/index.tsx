@@ -53,7 +53,7 @@ const Portion = () => {
             <ul className={styles.ul}>
                 <li>
                     <a 
-                        href="http://localhost:3000/ch-calculator/target" 
+                        href="https://gmszm.hu/ch-calculator/target" 
                         className={styles.a}>
                         TARGET
                     </a>
