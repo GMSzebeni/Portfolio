@@ -61,7 +61,7 @@
 .content {
     @apply
     py-3
-    max-h-[81vh]
+    max-h-[83vh]
     bg-slate-900/10
     rounded-[.25em]
     shadow-[0_0_.25em_rgba(255,255,255,0.1)]
