@@ -84,7 +84,7 @@ const Target = () => {
                             type="text"
                             name="chYouWantToEat" 
                             id="chYouWantToEat" 
-                            placeholder="weight of portion in grams"
+                            placeholder="gram of CH to contain"
                             value={target.chYouWantToEat}
                             onChange={(e) => handleChange(e)}
                             required={true}/>
