@@ -2,7 +2,7 @@ import styles from './Projects.module.css'
 import { SetStateAction, useState } from 'react';
 
 const Projects = () => {
-    const [rotateStates, setRotateStates] = useState(Array(2).fill(false));
+    const [rotateStates, setRotateStates] = useState(Array(3).fill(false));
     function handleRotate(index: number): void {
         const newRotateStates = rotateStates.map((state, i) => i === index ? !state : false);
         setRotateStates(newRotateStates);
@@ -85,6 +85,43 @@ const Projects = () => {
                             href="https://github.com/GMSzebeni/brepi-gmszm"
                             target="_blank">
                             GitHub link
+                        </a>
+                    </div>
+                </section>
+                <section 
+                    className={styles.section} 
+                    onClick={(): void => handleRotate(2)}>
+                    <div className={`${styles.frontTile} ${rotateStates[2] ? 'rotateY-0.5' : 'rotateY-0'}`}>
+                        <img 
+                            className= {styles.img} 
+                            src="img/CHlogo2.png"
+                            alt="brewdog lo.png" />
+                    </div>
+                    <div className={`${styles.backTile} ${rotateStates[2] ? 'rotateY-0' : 'rotateY-0.5'}`}>
+                        <h2 className={styles.h2}>CH Calculator</h2>
+                        <h3 className={styles.h3}>Technologies</h3>
+                        <p className={styles.p}>Languages: Java, TypeScript</p>
+                        <p className={styles.p}>Back-end: SpringBoot</p>
+                        <p className={styles.p}>Front-end: ReactJS, Next.JS, TailwindCSS, Axios</p>
+                        <p className={styles.p}>Developing framework: Visual Studio Code</p>
+                        <h3 className={styles.h3}>Description</h3>
+                        <p className={styles.p}>
+                            This is an app that calculates the carbohydrate content of a food. There are 
+                            two endpoints: Target and Portion. On Target the user can calculate how many grams 
+                            of food can be consumed with the desired amount of CH in it. On Portion it can be calculated 
+                            how many grams of CH the given amount of food contains.
+                        </p>
+                        <a 
+                            className={styles.a} 
+                            href="https://www.gmszm.hu/ch-calculator/target"
+                            target="_blank">
+                            Target
+                        </a><br />
+                        <a 
+                            className={styles.a} 
+                            href="https://www.gmszm.hu/ch-calculator/portion"
+                            target="_blank">
+                            Portion
                         </a>
                     </div>
                 </section>

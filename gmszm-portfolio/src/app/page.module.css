@@ -29,7 +29,8 @@
 	@apply
 	m-auto 
 	font-rajdhani 
-	text-7xl 
+	text-7xl
+	leading-[0.4]
 	text-black 
 	font-bold
 }
