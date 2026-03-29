@@ -1,3 +1,5 @@
+@reference "./globals.css";
+
 .sectionBlackOnWhite {
 	@apply
 	text-white 

@@ -1,3 +1,5 @@
+@reference "../../app/globals.css";
+
 .container {
     @apply
     z-0
@@ -46,6 +48,7 @@
     focus:border-solid
     focus:border-2
     outline-none
+    bg-white
     md:text-lg
     turned:leading-none
 }

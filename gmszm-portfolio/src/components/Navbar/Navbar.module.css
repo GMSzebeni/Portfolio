@@ -1,3 +1,5 @@
+@reference "../../app/globals.css";
+
 .name {
     @apply
     text-2xl 
