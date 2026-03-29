@@ -1,3 +1,5 @@
+@reference "../../../app/globals.css";
+
 .container {
     @apply
     text-black
@@ -141,6 +143,7 @@
     border-2
     border-solid
     border-cyan-700
+    bg-white
     rounded-lg
     text-xs
     focus:outline-none
